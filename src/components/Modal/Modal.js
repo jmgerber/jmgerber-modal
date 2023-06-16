@@ -1,7 +1,7 @@
 import '../../style.css'
 import React, { useState } from 'react'
 
-export const Modal = ({ label, children }) => {
+export const Modal = ({ label, children, btnClass }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   document.addEventListener('keydown', function (event) {
@@ -12,7 +12,9 @@ export const Modal = ({ label, children }) => {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)}>{label}</button>
+      <button onClick={() => setIsOpen(!isOpen)} className={btnClass}>
+        {label}
+      </button>
       {isOpen && (
         <div className='modal-container'>
           <div className='modal-content'>
