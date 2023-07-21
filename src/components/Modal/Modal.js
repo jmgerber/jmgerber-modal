@@ -1,6 +1,16 @@
 import '../../style.css'
 import React, { useState } from 'react'
 
+/**
+ * @function Modal React component for customizable modal display
+ *
+ * @param {string} label Button text content
+ * @param {string} btnClass Button class for styling
+ * @param {array} children Content includes between opening and closing tags when invoking the component
+ * 
+ * @returns {JSX} The modal component
+ */
+
 export const Modal = ({ label, children, btnClass }) => {
   const [isOpen, setIsOpen] = useState(false)
 
