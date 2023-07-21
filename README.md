@@ -1,7 +1,24 @@
 # jmgerber-modal
 
-A library of React modal component created using `create-react-app`.
+A simple React modal component created using `create-react-app`.
 
 ## Installation
 
-Run the following command: `npm install jmgerber-modal`
+Install the component: 
+```sh
+ npm install jmgerber-modal
+```
+
+Once installed, import the component in your application:
+```js
+import { Modal } from 'jmgerber-modal'
+```
+
+## Usage
+
+```jsx
+<Modal label={'Button text content'} btnClass={'button-class'}>
+    <p>Modal content...</p>
+    <p>Modal content...</p>
+</Modal>
+```
